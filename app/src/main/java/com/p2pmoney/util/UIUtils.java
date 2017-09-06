@@ -1,7 +1,9 @@
 package com.p2pmoney.util;
 
 import android.content.Context;
+import android.content.res.Resources.Theme;
 import android.os.Handler;
+import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Toast;
 
@@ -11,8 +13,9 @@ import com.p2pmoney.common.MyApplication;
  * Created by Administrator on 2015/12/11.
  */
 public class UIUtils {
-
+    @Nullable
     public static int getColor(int colorId) {
+
         return getContext().getResources().getColor(colorId);
     }
 
