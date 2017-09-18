@@ -25,6 +25,6 @@ public class MyApplication extends Application {
         mainThread = Thread.currentThread();
         mainThreadId = android.os.Process.myTid();
         super.onCreate();
-//        CrashHandler.getInstance().init(this);
+        CrashHandler.getInstance().init(this);
     }
 }
